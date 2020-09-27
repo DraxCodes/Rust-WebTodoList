@@ -3,3 +3,5 @@
 *    text=auto
 
 *.rs text diff=rust
+static/CSS/*.css linguist-vendored
+static/JS/*.js linguist-vendored
