@@ -58,8 +58,26 @@
                 <div class="container px-md-3 px-sm-0">
                     <div class="row wow fadeIn">
                         <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Add Todo
+                                </a>
+                                <div class="dropdown-menu">
+                                    <form method="POST" class="px-4 py-3">
+                                    <div class="form-group">
+                                        <div class="md-form">
+                                            <i class="fas fa-pencil-alt prefix"></i>
+                                            <textarea name="added_todo" id="add-todo-form" class="md-textarea form-control" rows="3"></textarea>
+                                            <label for="add-todo-form">Enter Todo</label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    </form>
+                                </div>
+                            </div>
                             {% for todo in todos -%}
-                                <h1>{{ todo }}</h1>
+                                <h1>{{ todo[0] }}</h1>
                             {%- endfor %}
                         </div>
                     </div>

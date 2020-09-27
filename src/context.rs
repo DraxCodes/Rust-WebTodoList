@@ -20,6 +20,5 @@ pub struct IndexContext {
 #[derive(Serialize)]
 pub struct TodosContext {
     pub main: MainContext,
-    pub sample: String,
-    pub todos: Vec<String>
+    pub todos: Vec<(String, bool)>
 }
