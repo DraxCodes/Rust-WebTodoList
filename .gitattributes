@@ -5,3 +5,4 @@
 *.rs text diff=rust
 static/CSS/* linguist-vendored
 static/JS/* linguist-vendored
+templates/* linguist-vendored
