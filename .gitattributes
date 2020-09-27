@@ -1,15 +1,5 @@
-[attr]rust text eol=lf whitespace=tab-in-indent,trailing-space,tabwidth=4
+# Auto detect text files and perform LF normalization
+# https://www.davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+*    text=auto
 
-* text=auto eol=lf
-*.cpp rust
-*.h rust
-*.rs rust
-*.fixed linguist-language=Rust
-src/etc/installer/gfx/* binary
-*.woff binary
-src/vendor/** -text
-Cargo.lock linguist-generated=false
-
-# Older git versions try to fix line endings on images, this prevents it.
-*.png binary
-*.ico binary
+*.rs text diff=rust
